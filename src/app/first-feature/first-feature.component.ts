@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./first-feature.component.scss']
 })
 export class FirstFeatureComponent {
-
 }

@@ -1,3 +1,4 @@
+import { SecondFeatureModule } from './second-feature/second-feature.module';
 import { ThirdFeatureComponent } from './third-feature/third-feature.component';
 import { SecondFeatureComponent } from './second-feature/second-feature.component';
 import { NgModule } from '@angular/core';
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'second-feature',
-    component: SecondFeatureComponent
+    loadChildren: () => import('./second-feature/second-feature.module').then(m => m.SecondFeatureModule)
   },
   {
     path: 'third-feature',
