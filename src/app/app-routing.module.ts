@@ -6,6 +6,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'first-feature'
+  },
+  {
     path: 'first-feature',
     component: FirstFeatureComponent
   },
@@ -16,11 +21,6 @@ const routes: Routes = [
   {
     path: 'third-feature',
     component: ThirdFeatureComponent
-  },
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'first-feature'
   }
 ];
 
